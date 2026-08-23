@@ -1,1 +1,12 @@
-:root{--primary:#2E1065;--accent:#7C3AED;--page-bg:#fff;--surface:#F5F3FF;--text:#2E1065;--muted:#66558c;--border:#ddd5f8}
+:root{
+--primary:#2e1065;
+--primary-dark:#210a4d;
+--accent:#7c3aed;
+--accent-soft:#ede9fe;
+--page-bg:#f5f3ff;
+--surface:#ffffff;
+--surface-soft:#eeeafe;
+--text:#2e1065;
+--muted:#685b7c;
+--border:#ddd6fe;
+}
