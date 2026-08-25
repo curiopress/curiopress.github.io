@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>
+Artificial Intelligence and Machine Learning: How Machines Learn From Data | CurioPress
+</title>
+
+<meta
+    name="description"
+    content="Understand artificial intelligence and machine learning, including training data, models, supervised learning, neural networks and inference."
+>
+
+<meta
+    name="robots"
+    content="index, follow"
+>
+
+<link
+    rel="stylesheet"
+    href="../css/main.css"
+>
+
+<link
+    rel="stylesheet"
+    href="../css/themes/ai.css"
+>
+
+<style>
+
+.article {
+    max-width: 850px;
+    margin: auto;
+    padding: 70px 20px;
+}
+
+.article-header {
+    margin-bottom: 45px;
+}
+
+.article h1 {
+    color: #2E1065;
+    font-size: clamp(2.4rem, 6vw, 4.4rem);
+    line-height: 1.05;
+    margin: 12px 0 25px;
+}
+
+.article h2 {
+    color: #2E1065;
+    font-size: 2rem;
+    margin-top: 50px;
+    line-height: 1.25;
+}
+
+.article h3 {
+    color: #2E1065;
+}
+
+.article p,
+.article li {
+    color: #5B4B7A;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.article ul,
+.article ol {
+    padding-left: 25px;
+}
+
+.article li {
+    margin-bottom: 10px;
+}
+
+.article-box {
+    background: #F5F3FF;
+    border-left: 5px solid #7C3AED;
+    padding: 22px;
+    border-radius: 14px;
+    margin: 30px 0;
+}
+
+.article-box strong {
+    color: #2E1065;
+}
+
+.article-box p {
+    margin-bottom: 0;
+}
+
+.eyebrow {
+    color: #7C3AED;
+    font-weight: 800;
+    letter-spacing: .12em;
+}
+
+.article-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.article-meta span {
+    background: #EDE9FE;
+    color: #2E1065;
+    border: 1px solid #DDD6FE;
+    border-radius: 999px;
+    padding: 7px 13px;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+@media (max-width: 700px) {
+
+    .article {
+        padding: 45px 18px 65px;
+    }
+
+    .article h1 {
+        font-size: 2.45rem;
+    }
+
+    .article h2 {
+        font-size: 1.65rem;
+        margin-top: 38px;
+    }
+
+    .article p,
+    .article li {
+        font-size: 1rem;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header class="site-header">
+
+    <div class="container nav-wrap">
+
+        <a
+            class="brand"
+            href="../index.html"
+            aria-label="CurioPress Home"
+        >
+
+            <span class="brand-mark">
+                C
+            </span>
+
+            <span class="brand-name">
+                CurioPress
+            </span>
+
+        </a>
+
+
+        <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Open navigation"
+            aria-expanded="false"
+        >
+            ☰
+        </button>
+
+
+        <nav
+            class="main-nav"
+            aria-label="Main navigation"
+        >
+
+            <a href="../index.html">
+                Home
+            </a>
+
+            <a href="../categories/technology.html">
+                Technology
+            </a>
+
+            <a
+                class="active"
+                href="../categories/ai.html"
+            >
+                AI
+            </a>
+
+            <a href="../categories/coding.html">
+                Coding
+            </a>
+
+            <a href="../categories/education.html">
+                Education
+            </a>
+
+            <a href="../categories/general-knowledge.html">
+                GK
+            </a>
+
+            <a href="../about.html">
+                About
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<main class="article">
+
+
+    <header class="article-header">
+
+        <span class="eyebrow">
+            AI • MACHINE LEARNING
+        </span>
+
+
+        <h1>
+            Artificial Intelligence and Machine Learning:
+            How Machines Learn From Data
+        </h1>
+
+
+        <p>
+            Artificial intelligence is often described as machines
+            becoming "smart". But modern AI is based on something much
+            more concrete: algorithms, data, mathematical models and
+            computing power.
+        </p>
+
+
+        <div class="article-meta">
+
+            <span>
+                Artificial Intelligence
+            </span>
+
+            <span>
+                Machine Learning
+            </span>
+
+            <span>
+                In-depth Guide
+            </span>
+
+        </div>
+
+    </header>
+
+
+
+    <h2>
+        What is Artificial Intelligence?
+    </h2>
+
+    <p>
+        Artificial intelligence is a broad field of computing focused
+        on building systems that can perform tasks that normally
+        require capabilities associated with human intelligence.
+    </p>
+
+    <p>
+        These tasks can include recognizing patterns, understanding
+        language, making predictions, interpreting images, solving
+        problems and generating content.
+    </p>
+
+    <p>
+        AI is therefore not one specific technology. It is an umbrella
+        term covering many different techniques and systems.
+    </p>
+
+
+
+    <h2>
+        AI and Machine Learning are not exactly the same
+    </h2>
+
+    <p>
+        Artificial intelligence is the broader field. Machine learning
+        is one of the major approaches used to build AI systems.
+    </p>
+
+    <p>
+        Traditional software is often created by explicitly writing
+        rules that tell a computer what to do. Machine learning takes
+        a different approach: instead of manually specifying every
+        rule, a model can learn patterns from examples.
+    </p>
+
+
+    <div class="article-box">
+
+        <strong>
+            Simple distinction:
+        </strong>
+
+        <p>
+            AI is the broader field and goal. Machine learning is a
+            major technique used to create AI systems that learn
+            patterns from data.
+        </p>
+
+    </div>
+
+
+
+    <h2>
+        What does "learning" mean for a machine?
+    </h2>
+
+    <p>
+        When people say that a machine learns, they do not mean that
+        it develops human-like consciousness or experiences.
+    </p>
+
+    <p>
+        In machine learning, an algorithm adjusts the parameters of
+        a mathematical model so that the model becomes better at a
+        particular task according to a chosen objective.
+    </p>
+
+    <p>
+        The model is given examples, produces outputs and is evaluated
+        against some target or objective. The learning process then
+        adjusts its internal parameters.
+    </p>
+
+
+
+    <h2>
+        Training Data
+    </h2>
+
+    <p>
+        Data is one of the most important components of machine
+        learning. The data provides examples from which a model can
+        discover patterns.
+    </p>
+
+    <p>
+        For example, imagine creating a system that distinguishes
+        between cats and dogs. The training process could use many
+        labeled images showing which images contain cats and which
+        contain dogs.
+    </p>
+
+    <p>
+        The quality, quantity and diversity of the training data can
+        have a major effect on the resulting model.
+    </p>
+
+
+
+    <h2>
+        Supervised Learning
+    </h2>
+
+    <p>
+        In supervised learning, training examples contain known
+        target answers or labels.
+    </p>
+
+    <p>
+        The model learns to map inputs to those targets.
+    </p>
+
+    <p>
+        For example, a system could learn to identify whether an email
+        is spam by studying many examples that have already been
+        labeled as spam or not spam.
+    </p>
+
+    <p>
+        Other examples include predicting house prices, recognizing
+        objects in images and estimating the probability of a certain
+        outcome.
+    </p>
+
+
+
+    <h2>
+        Unsupervised Learning
+    </h2>
+
+    <p>
+        Unsupervised learning works with data where explicit target
+        labels are not provided in the same way.
+    </p>
+
+    <p>
+        Instead, algorithms can search for structures, relationships
+        or groups within the data.
+    </p>
+
+    <p>
+        Clustering is one example. A system can group similar data
+        points together without being explicitly told the correct
+        category for every individual example.
+    </p>
+
+
+
+    <h2>
+        Neural Networks
+    </h2>
+
+    <p>
+        Neural networks are machine learning models made from
+        interconnected layers of mathematical operations.
+    </p>
+
+    <p>
+        During training, their parameters are adjusted so that their
+        outputs become increasingly useful for the task they are
+        being trained to perform.
+    </p>
+
+    <p>
+        Deep neural networks contain many layers and have become
+        especially important for modern AI applications such as
+        image recognition, speech recognition and language models.
+    </p>
+
+
+
+    <h2>
+        How a Neural Network Learns
+    </h2>
+
+    <p>
+        A neural network receives input data and processes it through
+        multiple layers. The network produces an output based on its
+        current parameters.
+    </p>
+
+    <p>
+        During training, the output is compared with the desired
+        result. The difference between them can be used to calculate
+        how the model should adjust its parameters.
+    </p>
+
+    <p>
+        This process is repeated many times across training examples.
+        Over time, the model can become better at the task.
+    </p>
+
+
+
+    <h2>
+        Training vs Inference
+    </h2>
+
+    <p>
+        Two important stages in machine learning are training and
+        inference.
+    </p>
+
+    <p>
+        During training, the model learns its parameters from data.
+        During inference, the trained model is used to produce
+        predictions or outputs for new inputs.
+    </p>
+
+
+    <ol>
+
+        <li>
+            <strong>
+                Training:
+            </strong>
+            The model learns patterns from examples.
+        </li>
+
+        <li>
+            <strong>
+                Inference:
+            </strong>
+            The trained model processes new information.
+        </li>
+
+    </ol>
+
+
+
+    <h2>
+        Why Models Sometimes Fail
+    </h2>
+
+    <p>
+        A machine learning model does not automatically understand
+        the real world perfectly.
+    </p>
+
+    <p>
+        If training data is incomplete, noisy, biased or
+        unrepresentative, the model can learn undesirable patterns.
+    </p>
+
+    <p>
+        A model can also perform extremely well on familiar examples
+        while performing poorly on situations that differ
+        significantly from its training data.
+    </p>
+
+
+
+    <h2>
+        What is Overfitting?
+    </h2>
+
+    <p>
+        Overfitting occurs when a model learns the training examples
+        too specifically instead of learning patterns that generalize
+        well to new data.
+    </p>
+
+    <p>
+        A model that has effectively memorized characteristics of its
+        training data may appear highly accurate during training but
+        perform poorly when given new examples.
+    </p>
+
+    <p>
+        Machine learning systems therefore need to be evaluated using
+        data that was not used to train the model.
+    </p>
+
+
+
+    <h2>
+        Why Computing Power Matters
+    </h2>
+
+    <p>
+        Modern machine learning models can contain millions,
+        billions or even more parameters.
+    </p>
+
+    <p>
+        Training these models requires enormous numbers of
+        mathematical operations.
+    </p>
+
+    <p>
+        GPUs and specialized AI accelerators can perform many of
+        these operations efficiently, making large-scale machine
+        learning possible.
+    </p>
+
+
+
+    <h2>
+        AI in Everyday Life
+    </h2>
+
+    <p>
+        Machine learning is already used in many systems people
+        interact with every day.
+    </p>
+
+    <ul>
+
+        <li>
+            Search engines
+        </li>
+
+        <li>
+            Recommendation systems
+        </li>
+
+        <li>
+            Spam detection
+        </li>
+
+        <li>
+            Speech recognition
+        </li>
+
+        <li>
+            Image recognition
+        </li>
+
+        <li>
+            Fraud detection
+        </li>
+
+        <li>
+            Translation systems
+        </li>
+
+        <li>
+            Generative AI
+        </li>
+
+    </ul>
+
+
+
+    <h2>
+        Generative AI
+    </h2>
+
+    <p>
+        A major development in modern AI is generative AI. These
+        systems can generate new text, images, audio, video and other
+        forms of content.
+    </p>
+
+    <p>
+        Large language models are an example of generative AI systems
+        that can produce text by learning patterns from large
+        collections of data.
+    </p>
+
+
+
+    <h2>
+        The Importance of Data Quality
+    </h2>
+
+    <p>
+        A model can only learn from the information available during
+        its training process. Poor-quality data can therefore create
+        poor-quality results.
+    </p>
+
+    <p>
+        Data can contain errors, missing information, duplicates,
+        biases or other problems that affect the behavior of a model.
+    </p>
+
+    <p>
+        Preparing and evaluating data is consequently an important
+        part of building reliable machine learning systems.
+    </p>
+
+
+
+    <h2>
+        Where AI is Heading
+    </h2>
+
+    <p>
+        AI systems are increasingly capable of working with multiple
+        types of information, including text, images, audio and video.
+    </p>
+
+    <p>
+        Researchers continue to work on improving reliability,
+        efficiency, reasoning capabilities, safety and the ability of
+        models to generalize to new situations.
+    </p>
+
+    <p>
+        The future of AI will likely involve increasingly capable
+        systems combined with stronger evaluation, better data and
+        more efficient computing.
+    </p>
+
+
+
+    <div class="article-box">
+
+        <strong>
+            Key takeaway:
+        </strong>
+
+        <p>
+            Machine learning allows computers to learn patterns from
+            data rather than relying entirely on manually written
+            rules. Modern AI combines these learning techniques with
+            increasingly powerful models, algorithms and computing
+            infrastructure.
+        </p>
+
+    </div>
+
+
+</main>
+
+
+<script src="../js/main.js"></script>
+
+
+</body>
+
+</html>
