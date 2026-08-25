@@ -1,12 +1,24 @@
-:root{
---primary:#17324d;
---primary-dark:#10283d;
---accent:#0f9f8f;
---accent-soft:#e5f7f4;
---page-bg:#f3f7f8;
---surface:#ffffff;
---surface-soft:#edf2f4;
---text:#14202b;
---muted:#5d6a75;
---border:#d8e1e6;
+:root {
+
+    --primary: #17324d;
+    --primary-dark: #10283d;
+
+    --accent: #0f9f8f;
+    --accent-soft: #dff4f1;
+
+    --page-bg: #eaf2f7;
+
+    --surface: #f8fbfd;
+    --surface-soft: #dfeaf0;
+
+    --text: #102a43;
+    --muted: #526777;
+
+    --border: #c9d9e3;
+
+    --shadow:
+        0 14px 38px rgba(23, 50, 77, 0.11);
+
+    --shadow-hover:
+        0 20px 48px rgba(23, 50, 77, 0.18);
 }
