@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>How Large Language Models Like ChatGPT Actually Work | CurioPress</title>
+
+<meta name="description" content="Understand how large language models work, including tokens, training data, neural networks, transformers, attention and text generation.">
+
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/themes/ai.css">
+
+<style>
+.article {
+    max-width: 850px;
+    margin: auto;
+    padding: 70px 20px;
+}
+
+.article-header {
+    margin-bottom: 45px;
+}
+
+.article h1 {
+    color: #2E1065;
+    font-size: clamp(2.4rem, 6vw, 4.4rem);
+    line-height: 1.05;
+    margin: 12px 0 25px;
+}
+
+.article h2 {
+    color: #2E1065;
+    font-size: 2rem;
+    margin-top: 50px;
+}
+
+.article p,
+.article li {
+    color: #5B4B7A;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.article ul,
+.article ol {
+    padding-left: 25px;
+}
+
+.article-box {
+    background: #F5F3FF;
+    border-left: 5px solid #7C3AED;
+    padding: 22px;
+    border-radius: 14px;
+    margin: 30px 0;
+}
+
+.article-box strong {
+    color: #2E1065;
+}
+
+.eyebrow {
+    color: #7C3AED;
+    font-weight: 800;
+    letter-spacing: .12em;
+}
+</style>
+</head>
+
+<body>
+
+<header class="site-header">
+
+<div class="container nav-wrap">
+
+<a class="brand" href="../index.html">
+<span class="brand-mark">C</span>
+<span class="brand-name">CurioPress</span>
+</a>
+
+<button class="menu-toggle"
+type="button"
+aria-label="Open navigation"
+aria-expanded="false">
+☰
+</button>
+
+<nav class="main-nav">
+
+<a href="../index.html">Home</a>
+<a href="../categories/technology.html">Technology</a>
+<a class="active" href="../categories/ai.html">AI</a>
+<a href="../categories/coding.html">Coding</a>
+<a href="../categories/education.html">Education</a>
+<a href="../categories/general-knowledge.html">GK</a>
+<a href="../about.html">About</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<main class="article">
+
+<header class="article-header">
+
+<span class="eyebrow">
+AI • GENERATIVE AI
+</span>
+
+<h1>
+How Large Language Models Like ChatGPT Actually Work
+</h1>
+
+<p>
+Large language models can write, summarize, translate, explain
+concepts and generate computer code. But how does a machine actually
+produce language that looks so intelligent?
+</p>
+
+</header>
+
+
+<h2>What is a large language model?</h2>
+
+<p>
+A large language model, or LLM, is an artificial intelligence system
+trained to process and generate human language. It learns statistical
+patterns from very large collections of text and uses those patterns
+to predict what text should come next.
+</p>
+
+<p>
+The important point is that an LLM does not simply store a giant
+database of answers. During training, it adjusts a very large number
+of internal parameters so that it becomes better at predicting
+language.
+</p>
+
+
+<h2>Everything starts with tokens</h2>
+
+<p>
+Language models generally do not process text exactly as humans see
+it. Text is divided into smaller pieces called tokens.
+</p>
+
+<p>
+A token can represent a complete word, part of a word, punctuation,
+or another piece of text. The exact way text is divided depends on
+the model's tokenizer.
+</p>
+
+<div class="article-box">
+
+<strong>Simple example:</strong>
+
+<p>
+A sentence such as "Artificial intelligence is changing technology"
+can be broken into a sequence of smaller tokens before being processed
+by the model.
+</p>
+
+</div>
+
+
+<h2>Training the model</h2>
+
+<p>
+During training, the model is exposed to enormous amounts of
+information and repeatedly attempts to predict missing or upcoming
+tokens.
+</p>
+
+<p>
+If the prediction is incorrect, the training process adjusts the
+model's parameters. Repeating this process on huge numbers of
+examples allows the model to learn increasingly complex patterns.
+</p>
+
+
+<h2>What are neural networks?</h2>
+
+<p>
+Modern language models are based on artificial neural networks.
+These networks contain many layers of mathematical operations that
+transform information as it moves through the system.
+</p>
+
+<p>
+The model's parameters contain numerical values that are adjusted
+during training. Together, these parameters allow the network to
+represent complex relationships between words, concepts and patterns
+in language.
+</p>
+
+
+<h2>The Transformer architecture</h2>
+
+<p>
+Most modern large language models are based on the Transformer
+architecture. Transformers became extremely important because they
+can process relationships between different parts of a sequence
+efficiently.
+</p>
+
+<p>
+One of their most important mechanisms is called attention.
+</p>
+
+
+<h2>What does attention do?</h2>
+
+<p>
+Attention allows the model to determine which other parts of the
+input are particularly relevant when processing a particular token.
+</p>
+
+<p>
+For example, in a long sentence, a word near the end may depend on
+information introduced much earlier. Attention helps the model
+connect these pieces of information.
+</p>
+
+
+<h2>How does an LLM generate an answer?</h2>
+
+<p>
+When you send a prompt to an LLM, the text is first converted into
+tokens. Those tokens are processed by the neural network.
+</p>
+
+<p>
+The model then calculates probabilities for possible next tokens.
+A token is selected according to the model's generation process,
+added to the sequence and processed again.
+</p>
+
+<p>
+This happens repeatedly until the model produces the response.
+</p>
+
+<div class="article-box">
+
+<strong>The key idea:</strong>
+
+<p>
+An LLM generates text step by step. It repeatedly predicts what token
+should come next based on the context available to it.
+</p>
+
+</div>
+
+
+<h2>Why does it appear to understand?</h2>
+
+<p>
+The patterns learned during training can be extremely sophisticated.
+The model can learn relationships between words, concepts, syntax,
+facts and different styles of writing.
+</p>
+
+<p>
+This can produce behavior that looks like deep understanding.
+However, the internal mechanism is still based on mathematical
+operations performed by a neural network.
+</p>
+
+
+<h2>Why can LLMs make mistakes?</h2>
+
+<p>
+A language model's primary mechanism is generating likely text.
+That does not guarantee that every generated statement is factually
+correct.
+</p>
+
+<p>
+A model can therefore produce an answer that sounds convincing while
+containing incorrect information. These errors are commonly referred
+to as AI hallucinations.
+</p>
+
+
+<h2>Why training requires enormous computing power</h2>
+
+<p>
+Training a large model involves processing enormous quantities of
+data through very large neural networks.
+</p>
+
+<p>
+Specialized processors such as GPUs and other accelerators are used
+to perform the massive number of mathematical operations required.
+</p>
+
+<p>
+Large-scale training can therefore require substantial computing
+resources, electricity, storage and networking infrastructure.
+</p>
+
+
+<h2>Training is not the only stage</h2>
+
+<p>
+After initial training, advanced AI systems can go through additional
+processes designed to make their behavior more useful, safer and
+better aligned with the desired interaction style.
+</p>
+
+<p>
+These stages can involve additional datasets, human feedback,
+evaluation and other techniques.
+</p>
+
+
+<h2>The bigger picture</h2>
+
+<p>
+Large language models combine several major areas of computing:
+machine learning, neural networks, natural language processing,
+mathematics, high-performance computing and massive-scale data
+processing.
+</p>
+
+<p>
+Their impressive capabilities come from the interaction of these
+components rather than from one simple piece of technology.
+</p>
+
+
+<div class="article-box">
+
+<strong>Key takeaway:</strong>
+
+<p>
+An LLM learns statistical patterns from large amounts of data using
+neural networks. When you give it a prompt, it processes the tokens
+and repeatedly predicts the next token to construct a response.
+</p>
+
+</div>
+
+</main>
+
+
+<script src="../js/main.js"></script>
+
+</body>
+</html>
