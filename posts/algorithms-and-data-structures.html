@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Algorithms and Data Structures | CurioPress</title>
+
+<meta name="description" content="Learn why algorithms and data structures are fundamental to software, how they organize information and how they affect performance.">
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://curiopress.github.io/posts/algorithms-and-data-structures.html">
+
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/themes/coding.css">
+
+<style>
+.article-page {
+    background:#f5f9ff;
+    min-height:100vh;
+}
+
+.article-container {
+    max-width:900px;
+    margin:auto;
+    padding:70px 20px 90px;
+}
+
+.article-header,
+.article-content {
+    background:#fff;
+    border:1px solid #dbeafe;
+    border-radius:28px;
+    box-shadow:0 12px 35px rgba(30,64,175,.07);
+}
+
+.article-header {
+    padding:45px;
+    margin-bottom:30px;
+}
+
+.article-category {
+    color:#2563eb;
+    font-weight:800;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    font-size:.85rem;
+}
+
+.article-header h1 {
+    color:#102a43;
+    font-size:clamp(2.2rem,6vw,4rem);
+    line-height:1.1;
+    margin:18px 0;
+}
+
+.article-intro {
+    color:#52606d;
+    font-size:1.2rem;
+    line-height:1.8;
+}
+
+.article-content {
+    padding:45px;
+}
+
+.article-content h2 {
+    color:#102a43;
+    margin-top:42px;
+}
+
+.article-content h3 {
+    color:#1e3a5f;
+    margin-top:30px;
+}
+
+.article-content p,
+.article-content li {
+    color:#52606d;
+    font-size:1.05rem;
+    line-height:1.85;
+}
+
+.article-content ul,
+.article-content ol {
+    padding-left:25px;
+}
+
+.article-content strong {
+    color:#102a43;
+}
+
+.article-note {
+    background:#eff6ff;
+    border-left:5px solid #2563eb;
+    padding:20px;
+    border-radius:12px;
+    margin:28px 0;
+}
+
+@media(max-width:600px) {
+    .article-container {
+        padding:35px 15px 60px;
+    }
+
+    .article-header,
+    .article-content {
+        padding:25px;
+        border-radius:20px;
+    }
+}
+</style>
+</head>
+
+<body class="article-page">
+
+<header class="site-header">
+<div class="container nav-wrap">
+
+<a class="brand" href="../index.html">
+<span class="brand-mark">C</span>
+<span class="brand-name">CurioPress</span>
+</a>
+
+<button class="menu-toggle" type="button" aria-label="Open navigation menu">
+☰
+</button>
+
+<nav class="main-nav">
+<a href="../index.html">Home</a>
+<a href="../categories/technology.html">Technology</a>
+<a href="../categories/ai.html">AI</a>
+<a class="active" href="../categories/coding.html">Coding</a>
+<a href="../categories/education.html">Education</a>
+<a href="../categories/general-knowledge.html">GK</a>
+</nav>
+
+</div>
+</header>
+
+<main>
+
+<div class="article-container">
+
+<header class="article-header">
+
+<div class="article-category">
+Coding
+</div>
+
+<h1>
+Algorithms and Data Structures: The Foundation of Software
+</h1>
+
+<p class="article-intro">
+Every useful software system depends on ways to organize information
+and solve problems efficiently. Algorithms and data structures provide
+the foundations that make this possible.
+</p>
+
+</header>
+
+<article class="article-content">
+
+<h2>What Is an Algorithm?</h2>
+
+<p>
+An algorithm is a defined procedure for solving a problem or performing
+a task. It takes some input, performs a sequence of operations and
+produces an output.
+</p>
+
+<p>
+Algorithms are not limited to computers. A recipe, for example, can be
+viewed as a sequence of instructions for producing a result. Computer
+algorithms are designed to operate on digital information and often need
+to handle very large amounts of data.
+</p>
+
+<h2>What Is a Data Structure?</h2>
+
+<p>
+A data structure is a way of organizing and storing information so that
+software can use it efficiently.
+</p>
+
+<p>
+Different problems require different structures. A simple list may be
+perfect for one task, while a tree, hash table or graph may be much more
+appropriate for another.
+</p>
+
+<h2>Arrays</h2>
+
+<p>
+An array stores elements in an ordered sequence. Arrays are useful when
+programs need quick access to elements using their position.
+</p>
+
+<p>
+They are widely used because their simple structure maps well to how
+computers organize memory.
+</p>
+
+<h2>Linked Lists</h2>
+
+<p>
+A linked list connects individual elements through references or
+pointers. Unlike a traditional array, its elements do not necessarily
+need to occupy one continuous region of memory.
+</p>
+
+<p>
+Linked lists can make certain insertion and deletion operations
+convenient, although accessing an arbitrary position can require
+traversing earlier elements.
+</p>
+
+<h2>Stacks and Queues</h2>
+
+<p>
+A stack follows the general principle of last in, first out. It is useful
+for tasks such as managing nested operations and function calls.
+</p>
+
+<p>
+A queue generally follows first in, first out. Queues are useful when
+tasks need to be processed in the order they arrive.
+</p>
+
+<h2>Hash Tables</h2>
+
+<p>
+Hash tables organize data using a hash function that maps keys to
+locations. They are widely used for fast lookup operations.
+</p>
+
+<p>
+Hash tables are fundamental to many applications, including caches,
+databases, programming language runtimes and configuration systems.
+</p>
+
+<h2>Trees</h2>
+
+<p>
+Trees represent hierarchical relationships. File systems, document
+structures and many search systems can naturally be represented using
+trees.
+</p>
+
+<p>
+Specialized trees can be designed to make searching, inserting and
+deleting information more efficient.
+</p>
+
+<h2>Graphs</h2>
+
+<p>
+Graphs represent relationships between objects. They contain nodes and
+connections between those nodes.
+</p>
+
+<p>
+Graphs are useful for modelling networks, maps, social relationships,
+dependency systems and many other real-world structures.
+</p>
+
+<h2>Why Performance Matters</h2>
+
+<p>
+An algorithm that works well with a small amount of data may become
+unusable when the amount of data grows dramatically.
+</p>
+
+<p>
+This is why programmers analyze how much time and memory an algorithm
+requires as its input grows.
+</p>
+
+<div class="article-note">
+<strong>Key idea:</strong> Choosing the right algorithm and data
+structure can sometimes improve software performance more than simply
+writing more code.
+</div>
+
+<h2>Big O Notation</h2>
+
+<p>
+Big O notation is commonly used to describe how an algorithm's resource
+requirements grow as its input becomes larger.
+</p>
+
+<p>
+For example, an operation that examines every element of a list may have
+linear growth, commonly described as O(n). An algorithm that repeatedly
+halves its search space can have logarithmic growth, commonly described
+as O(log n).
+</p>
+
+<h2>Algorithms and Data Structures Work Together</h2>
+
+<p>
+Algorithms and data structures should not be considered completely
+separate subjects. The structure chosen to store information directly
+affects which operations are efficient.
+</p>
+
+<p>
+Good software design therefore considers both the data and the operations
+that need to be performed on that data.
+</p>
+
+<h2>Conclusion</h2>
+
+<p>
+Algorithms describe how problems are solved, while data structures
+determine how information is organized for those solutions.
+</p>
+
+<p>
+Together they form one of the most important foundations of computer
+science and software engineering. Understanding them helps developers
+write programs that remain efficient as systems and datasets grow.
+</p>
+
+</article>
+
+</div>
+
+</main>
+
+<footer class="site-footer">
+<div class="container footer-bottom">
+<span>© 2026 CurioPress. All rights reserved.</span>
+</div>
+</footer>
+
+<script src="../js/main.js"></script>
+
+</body>
+</html>
