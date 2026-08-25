@@ -1,12 +1,273 @@
-:root{
---primary:#083344;
---primary-dark:#062b3a;
---accent:#0e9f6e;
---accent-soft:#dffcf3;
---page-bg:#ecfeff;
---surface:#ffffff;
---surface-soft:#dff8fa;
---text:#083344;
---muted:#46616b;
---border:#b9e8eb;
+:root {
+    --tech-accent: #0E9F6E;
+    --tech-cyan: #06B6D4;
+    --tech-bg: #ECFEFF;
+    --tech-text: #083344;
+    --tech-muted: #41636d;
+    --tech-card: #ffffff;
+    --tech-border: #b9e8e5;
+}
+
+
+/* TECHNOLOGY PAGE */
+
+body {
+    background: var(--tech-bg);
+    color: var(--tech-text);
+}
+
+
+/* HEADER */
+
+.site-header {
+    background: #ffffff;
+    border-bottom: 1px solid var(--tech-border);
+}
+
+
+/* HERO */
+
+.hero {
+    background: linear-gradient(
+        135deg,
+        #e9ffff 0%,
+        #dffaf4 100%
+    );
+
+    border: 1px solid var(--tech-border);
+    border-radius: 28px;
+    margin-top: 40px;
+    margin-bottom: 70px;
+    padding: 70px 55px;
+    box-shadow: 0 15px 40px rgba(8, 51, 68, 0.08);
+}
+
+
+/* TECHNOLOGY LABEL */
+
+.eyebrow {
+    color: var(--tech-accent);
+    font-weight: 800;
+    letter-spacing: 0.12em;
+}
+
+
+/* HEADINGS */
+
+.hero h1,
+.section-heading h2 {
+    color: var(--tech-text);
+}
+
+
+/* TEXT */
+
+.hero p {
+    color: var(--tech-muted);
+}
+
+
+/* BUTTONS */
+
+.button-primary {
+    background: var(--tech-accent);
+    color: #ffffff;
+    border: 1px solid var(--tech-accent);
+}
+
+.button-primary:hover {
+    background: #087f59;
+    transform: translateY(-2px);
+}
+
+.button-secondary {
+    background: #ffffff;
+    color: var(--tech-text);
+    border: 1px solid var(--tech-border);
+}
+
+.button-secondary:hover {
+    border-color: var(--tech-accent);
+    color: var(--tech-accent);
+}
+
+
+/* ARTICLE SECTION */
+
+.section {
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
+
+.section-heading {
+    margin-bottom: 35px;
+}
+
+.section-heading h2 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-top: 8px;
+}
+
+
+/* IMPORTANT PART
+   ARTICLE CARDS
+*/
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+    width: 100%;
+}
+
+
+/* EACH CARD */
+
+.card {
+    display: flex;
+    flex-direction: column;
+
+    background: var(--tech-card);
+
+    border: 1px solid var(--tech-border);
+
+    border-radius: 24px;
+
+    padding: 34px;
+
+    min-height: 330px;
+
+    box-sizing: border-box;
+
+    box-shadow:
+        0 10px 30px rgba(8, 51, 68, 0.08);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+/* CARD HOVER */
+
+.card:hover {
+    transform: translateY(-5px);
+
+    border-color: var(--tech-accent);
+
+    box-shadow:
+        0 18px 40px rgba(8, 51, 68, 0.13);
+}
+
+
+/* CARD CATEGORY */
+
+.card .eyebrow {
+    display: block;
+    margin-bottom: 15px;
+}
+
+
+/* CARD TITLE */
+
+.card h3 {
+    color: var(--tech-text);
+
+    font-size: clamp(
+        1.45rem,
+        3vw,
+        2rem
+    );
+
+    line-height: 1.25;
+
+    margin: 0 0 18px;
+}
+
+
+/* CARD DESCRIPTION */
+
+.card p {
+    color: var(--tech-muted);
+
+    font-size: 1.05rem;
+
+    line-height: 1.7;
+
+    margin: 0 0 28px;
+}
+
+
+/* CARD BUTTON */
+
+.card .button {
+    align-self: flex-start;
+
+    margin-top: auto;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 52px;
+
+    padding: 0 24px;
+
+    border-radius: 12px;
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .hero {
+        margin-top: 25px;
+        padding: 45px 25px;
+        border-radius: 22px;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .card {
+        min-height: auto;
+        padding: 28px;
+    }
+
+}
+
+
+/* SMALL MOBILE */
+
+@media (max-width: 500px) {
+
+    .hero {
+        padding: 35px 20px;
+    }
+
+    .card {
+        padding: 24px;
+        border-radius: 20px;
+    }
+
+    .card h3 {
+        font-size: 1.4rem;
+    }
+
+    .card p {
+        font-size: 1rem;
+    }
+
 }
