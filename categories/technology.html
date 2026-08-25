@@ -1,395 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Technology | CurioPress</title>
+<title>Technology — CurioPress</title>
 
-    <meta
-        name="description"
-        content="Explore important technology topics, digital systems, cybersecurity, the internet, and the technologies shaping modern life on CurioPress."
-    >
+<meta name="description" content="Important technology topics explained clearly by CurioPress.">
 
-    <meta name="robots" content="index, follow">
+<meta name="robots" content="index, follow">
 
-    <link rel="canonical" href="https://curiopress.github.io/categories/technology.html">
+<link rel="canonical" href="https://curiopress.github.io/categories/technology.html">
 
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/themes/tech.css">
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/themes/tech.css">
 
-    <style>
-        .tech-page {
-            max-width: 1180px;
-            margin: 0 auto;
-            padding: 70px 22px 90px;
-        }
-
-        .tech-hero {
-            background:
-                linear-gradient(
-                    135deg,
-                    #ECFEFF 0%,
-                    #DFFCF3 55%,
-                    #FFFFFF 100%
-                );
-            border: 1px solid #B9E8EB;
-            border-radius: 26px;
-            padding: 55px 45px;
-            margin-bottom: 55px;
-            box-shadow: 0 12px 35px rgba(8, 51, 68, 0.08);
-        }
-
-        .tech-label {
-            display: inline-block;
-            color: #0E9F6E;
-            font-weight: 800;
-            font-size: 0.82rem;
-            letter-spacing: 0.12em;
-            text-transform: uppercase;
-            margin-bottom: 15px;
-        }
-
-        .tech-hero h1 {
-            color: #083344;
-            font-size: clamp(2.5rem, 6vw, 4.8rem);
-            line-height: 1.02;
-            margin: 0 0 20px;
-        }
-
-        .tech-hero p {
-            color: #46616B;
-            max-width: 760px;
-            font-size: 1.12rem;
-            line-height: 1.75;
-            margin: 0;
-        }
-
-        .tech-section-title {
-            margin-bottom: 25px;
-        }
-
-        .tech-section-title span {
-            display: block;
-            color: #0E9F6E;
-            font-size: 0.8rem;
-            font-weight: 800;
-            letter-spacing: 0.12em;
-            text-transform: uppercase;
-            margin-bottom: 8px;
-        }
-
-        .tech-section-title h2 {
-            color: #083344;
-            font-size: clamp(1.8rem, 4vw, 2.6rem);
-            margin: 0;
-        }
-
-        .tech-grid {
-            display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 24px;
-        }
-
-        .tech-card {
-            display: flex;
-            flex-direction: column;
-            background: #FFFFFF;
-            border: 1px solid #B9E8EB;
-            border-radius: 18px;
-            padding: 30px;
-            box-shadow: 0 5px 18px rgba(8, 51, 68, 0.06);
-            transition: 0.2s ease;
-        }
-
-        .tech-card:hover {
-            transform: translateY(-4px);
-            border-color: #0E9F6E;
-            box-shadow: 0 14px 30px rgba(8, 51, 68, 0.12);
-        }
-
-        .tech-card-tag {
-            color: #0E9F6E;
-            font-size: 0.76rem;
-            font-weight: 800;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            margin-bottom: 12px;
-        }
-
-        .tech-card h3 {
-            color: #083344;
-            font-size: 1.45rem;
-            line-height: 1.25;
-            margin: 0 0 12px;
-        }
-
-        .tech-card p {
-            color: #46616B;
-            line-height: 1.7;
-            margin: 0 0 25px;
-        }
-
-        .tech-read {
-            margin-top: auto;
-            display: inline-flex;
-            align-items: center;
-            width: fit-content;
-            padding: 11px 17px;
-            border-radius: 9px;
-            background: #0E9F6E;
-            color: #FFFFFF !important;
-            text-decoration: none;
-            font-weight: 700;
-            transition: 0.2s ease;
-        }
-
-        .tech-read:hover {
-            background: #087F59;
-            color: #FFFFFF !important;
-            transform: translateY(-1px);
-        }
-
-        .tech-empty {
-            margin-top: 35px;
-            padding: 30px;
-            border-radius: 18px;
-            background: #DFF8FA;
-            border: 1px solid #B9E8EB;
-        }
-
-        .tech-empty strong {
-            color: #083344;
-        }
-
-        .tech-empty p {
-            color: #46616B;
-            line-height: 1.7;
-            margin-bottom: 0;
-        }
-
-        @media (max-width: 700px) {
-            .tech-page {
-                padding: 45px 16px 65px;
-            }
-
-            .tech-hero {
-                padding: 36px 24px;
-                border-radius: 20px;
-            }
-
-            .tech-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .tech-card {
-                padding: 24px;
-            }
-        }
-    </style>
 </head>
 
 <body>
 
-    <header class="site-header">
-        <div class="container">
-            <a href="../index.html" class="logo" aria-label="CurioPress Home">
-                CurioPress
-            </a>
+<header class="site-header">
 
-            <nav aria-label="Main navigation">
-                <a href="../index.html">Home</a>
-                <a href="technology.html" aria-current="page">Technology</a>
-                <a href="ai.html">AI</a>
-                <a href="coding.html">Coding</a>
-                <a href="education.html">Education</a>
-                <a href="general-knowledge.html">GK</a>
-            </nav>
-        </div>
-    </header>
+<div class="container nav-wrap">
 
-    <main>
+<a class="brand" href="../index.html" aria-label="CurioPress Home">
+<span class="brand-mark">C</span>
+<span class="brand-name">CurioPress</span>
+</a>
 
-        <section class="tech-page">
+<button
+class="menu-toggle"
+type="button"
+aria-label="Open navigation"
+aria-expanded="false">
+☰
+</button>
 
-            <div class="tech-hero">
+<nav class="main-nav" aria-label="Main navigation">
 
-                <span class="tech-label">
-                    CurioPress • Technology
-                </span>
+<a href="../index.html">Home</a>
 
-                <h1>
-                    Technology worth understanding.
-                </h1>
+<a class="active" href="technology.html">
+Technology
+</a>
 
-                <p>
-                    Explore the important technologies behind the digital
-                    world we use every day. From the internet and
-                    cybersecurity to digital infrastructure and emerging
-                    systems, CurioPress focuses on understanding how things
-                    actually work and why they matter.
-                </p>
+<a href="ai.html">
+AI
+</a>
 
-            </div>
+<a href="education.html">
+Education
+</a>
 
+<a href="coding.html">
+Coding
+</a>
 
-            <div class="tech-section-title">
+<a href="general-knowledge.html">
+GK
+</a>
 
-                <span>
-                    Explore Technology
-                </span>
+<a href="../about.html">
+About
+</a>
 
-                <h2>
-                    Important topics
-                </h2>
+</nav>
 
-            </div>
+</div>
+
+</header>
 
 
-            <div class="tech-grid">
+<main>
 
-                <article class="tech-card">
+<section class="hero container">
 
-                    <div class="tech-card-tag">
-                        Cybersecurity
-                    </div>
+<div class="hero-copy">
 
-                    <h3>
-                        Cybersecurity: How the Digital World Protects Itself
-                    </h3>
+<span class="eyebrow">
+CurioPress • Technology
+</span>
 
-                    <p>
-                        Understand threats, vulnerabilities, encryption,
-                        authentication, phishing, malware and the basic
-                        principles used to protect modern digital systems.
-                    </p>
+<h1>
+Technology worth understanding.
+</h1>
 
-                    <a
-                        class="tech-read"
-                        href="../posts/cybersecurity.html"
-                    >
-                        Read article →
-                    </a>
+<p>
+Important technology concepts explained clearly,
+from cybersecurity and the internet to data centers
+and the fundamentals of modern computing.
+</p>
 
-                </article>
+<div class="hero-actions">
 
+<a class="button button-primary" href="#articles">
+Explore Articles
+</a>
 
-                <article class="tech-card">
+<a class="button button-secondary" href="../index.html#categories">
+All Categories
+</a>
 
-                    <div class="tech-card-tag">
-                        Internet
-                    </div>
+</div>
 
-                    <h3>
-                        How the Internet Actually Works
-                    </h3>
+</div>
 
-                    <p>
-                        Follow what happens when you open a website, from
-                        DNS and servers to IP addresses, packets, browsers
-                        and the infrastructure connecting the world.
-                    </p>
-
-                    <a
-                        class="tech-read"
-                        href="../posts/how-the-internet-works.html"
-                    >
-                        Read article →
-                    </a>
-
-                </article>
+</section>
 
 
-                <article class="tech-card">
+<section class="section container" id="articles">
 
-                    <div class="tech-card-tag">
-                        Digital Infrastructure
-                    </div>
+<div class="section-heading">
 
-                    <h3>
-                        What Happens Inside a Modern Data Center?
-                    </h3>
+<span class="eyebrow">
+Technology
+</span>
 
-                    <p>
-                        Learn how servers, storage, networking, cooling,
-                        electricity and redundancy work together to keep
-                        online services running.
-                    </p>
+<h2>
+Important topics
+</h2>
 
-                    <a
-                        class="tech-read"
-                        href="../posts/data-centers.html"
-                    >
-                        Read article →
-                    </a>
-
-                </article>
+</div>
 
 
-                <article class="tech-card">
-
-                    <div class="tech-card-tag">
-                        Computing
-                    </div>
-
-                    <h3>
-                        From Bits to Computing: How Computers Process Information
-                    </h3>
-
-                    <p>
-                        Discover how binary data, logic, processors,
-                        memory and storage combine to turn instructions
-                        into the applications we use every day.
-                    </p>
-
-                    <a
-                        class="tech-read"
-                        href="../posts/how-computers-work.html"
-                    >
-                        Read article →
-                    </a>
-
-                </article>
-
-            </div>
+<div class="card-grid">
 
 
-            <div class="tech-empty">
+<article class="card">
 
-                <strong>
-                    More technology topics are coming.
-                </strong>
+<span class="eyebrow">
+Cybersecurity
+</span>
 
-                <p>
-                    CurioPress will focus on meaningful technology topics
-                    rather than short, ordinary news posts.
-                </p>
+<h3>
+Cybersecurity: How the Digital World Protects Itself
+</h3>
 
-            </div>
+<p>
+Understand cyber threats, malware, phishing, encryption,
+authentication, vulnerabilities and the principles used
+to protect modern digital systems.
+</p>
 
-        </section>
+<a class="button button-primary"
+href="../posts/cybersecurity.html">
+Read Article →
+</a>
 
-    </main>
+</article>
 
 
-    <footer class="site-footer">
+<article class="card">
 
-        <div class="container">
+<span class="eyebrow">
+Internet
+</span>
 
-            <p>
-                © 2026 CurioPress. All rights reserved.
-            </p>
+<h3>
+How the Internet Actually Works
+</h3>
 
-            <nav aria-label="Footer navigation">
-                <a href="../about.html">About</a>
-                <a href="../contact.html">Contact</a>
-                <a href="../privacy.html">Privacy</a>
-                <a href="../disclaimer.html">Disclaimer</a>
-            </nav>
+<p>
+Understand what happens when you open a website,
+including DNS, IP addresses, servers, packets,
+routing and browsers.
+</p>
 
-        </div>
+<a class="button button-primary"
+href="../posts/how-the-internet-works.html">
+Read Article →
+</a>
 
-    </footer>
+</article>
+
+
+<article class="card">
+
+<span class="eyebrow">
+Digital Infrastructure
+</span>
+
+<h3>
+What Happens Inside a Modern Data Center?
+</h3>
+
+<p>
+Learn how servers, storage, networking, electricity,
+cooling and redundancy keep modern online services
+running.
+</p>
+
+<a class="button button-primary"
+href="../posts/data-centers.html">
+Read Article →
+</a>
+
+</article>
+
+
+<article class="card">
+
+<span class="eyebrow">
+Computing
+</span>
+
+<h3>
+From Bits to Computing: How Computers Process Information
+</h3>
+
+<p>
+Learn how binary, logic, processors, memory and storage
+work together to turn instructions into useful software.
+</p>
+
+<a class="button button-primary"
+href="../posts/how-computers-work.html">
+Read Article →
+</a>
+
+</article>
+
+
+</div>
+
+</section>
+
+</main>
+
+
+<footer class="site-footer">
+
+<div class="container">
+
+<p>
+© 2026 CurioPress. All rights reserved.
+</p>
+
+</div>
+
+</footer>
+
+
+<script src="../js/main.js"></script>
 
 </body>
 </html>
