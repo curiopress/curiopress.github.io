@@ -5,14 +5,9 @@
 
 <meta charset="UTF-8">
 
-<meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>
-CurioPress — Discover Something Worth Knowing
-</title>
+<title>CurioPress — Discover Something Worth Knowing</title>
 
 <meta
     name="description"
@@ -39,193 +34,226 @@ CurioPress — Discover Something Worth Knowing
     href="css/themes/professional.css"
 >
 
+
 <style>
 
-.home-page {
-    background: #f8fafc;
+/* =========================================
+   LATEST ARTICLES
+========================================= */
+
+.latest-section {
+    padding-top: 20px;
+    padding-bottom: 80px;
 }
 
-.home-page .article-grid {
+.latest-heading {
+    margin-bottom: 34px;
+}
+
+.latest-heading .eyebrow {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.latest-heading h2 {
+    margin: 0;
+}
+
+
+/* =========================================
+   ARTICLE GRID
+========================================= */
+
+.latest-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 24px;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 28px;
 }
 
-.home-page .article-card {
-    display: flex;
-    flex-direction: column;
 
-    background: #ffffff;
+/* =========================================
+   ARTICLE CARD
+========================================= */
 
-    border: 1px solid #e2e8f0;
-
-    border-radius: 22px;
+.latest-card {
+    display: block;
 
     overflow: hidden;
 
+    text-decoration: none;
+
+    color: inherit;
+
+    background: #ffffff;
+
+    border: 1px solid #dce5ec;
+
+    border-radius: 24px;
+
     box-shadow:
-        0 10px 30px rgba(15, 23, 42, 0.07);
+        0 10px 28px rgba(15, 42, 67, 0.07);
 
     transition:
-        transform .2s ease,
-        box-shadow .2s ease,
-        border-color .2s ease;
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
 }
 
-.home-page .article-card:hover {
+
+.latest-card:hover {
     transform: translateY(-5px);
 
     border-color: #0e9f9a;
 
     box-shadow:
-        0 18px 40px rgba(15, 23, 42, 0.12);
+        0 18px 40px rgba(15, 42, 67, 0.12);
 }
 
-.home-page .article-image {
-    min-height: 150px;
 
-    display: flex;
+/* =========================================
+   ARTICLE IMAGE
+========================================= */
 
-    align-items: center;
+.latest-card-image {
+    width: 100%;
 
-    justify-content: center;
+    height: 230px;
 
-    padding: 20px;
+    overflow: hidden;
 
-    background:
-        linear-gradient(
-            135deg,
-            #e2e8f0,
-            #f1f5f9
-        );
-
-    color: #334155;
-
-    font-size: .85rem;
-
-    font-weight: 800;
-
-    letter-spacing: .1em;
-
-    text-transform: uppercase;
+    background: #e9eef4;
 }
 
-.home-page .article-body {
-    display: flex;
 
-    flex-direction: column;
+.latest-card-image img {
+    width: 100%;
 
-    flex: 1;
+    height: 100%;
 
+    display: block;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.35s ease;
+}
+
+
+.latest-card:hover .latest-card-image img {
+    transform: scale(1.04);
+}
+
+
+/* =========================================
+   ARTICLE CONTENT
+========================================= */
+
+.latest-card-content {
     padding: 26px;
 }
 
-.home-page .category-pill {
-    align-self: flex-start;
 
-    display: inline-flex;
+/* =========================================
+   CATEGORY
+========================================= */
 
-    padding: 6px 11px;
-
-    border-radius: 999px;
-
-    background: #e6fffb;
-
-    color: #087f79;
-
-    font-size: .78rem;
-
-    font-weight: 800;
-}
-
-.home-page .article-card h3 {
-    color: #102a43;
-
-    font-size: 1.35rem;
-
-    line-height: 1.3;
-
-    margin: 16px 0 12px;
-}
-
-.home-page .article-card p {
-    color: #52606d;
-
-    line-height: 1.7;
-
-    margin: 0 0 20px;
-}
-
-.home-page .article-meta {
-    display: flex;
-
-    gap: 7px;
-
-    flex-wrap: wrap;
-
-    color: #718096;
-
-    font-size: .82rem;
-
-    margin-bottom: 20px;
-}
-
-.home-page .article-read {
-    margin-top: auto;
-
-    align-self: flex-start;
-
+.latest-category {
     display: inline-flex;
 
     align-items: center;
 
-    justify-content: center;
+    padding: 7px 13px;
 
-    padding: 11px 17px;
+    border-radius: 999px;
 
-    border-radius: 10px;
+    background: #e7fffb;
 
-    background: #0e9f9a;
+    color: #087f79;
 
-    color: #ffffff;
-
-    text-decoration: none;
+    font-size: 0.8rem;
 
     font-weight: 800;
 
-    transition: background .2s ease;
+    letter-spacing: 0.01em;
 }
 
-.home-page .article-read:hover {
-    background: #087f79;
+
+/* =========================================
+   TITLE
+========================================= */
+
+.latest-card h3 {
+    margin: 17px 0 12px;
+
+    color: #102a43;
+
+    font-size: 1.4rem;
+
+    line-height: 1.3;
 }
 
-.home-page .category-card {
-    transition:
-        transform .2s ease,
-        box-shadow .2s ease;
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.latest-card p {
+    margin: 0;
+
+    color: #52606d;
+
+    font-size: 1rem;
+
+    line-height: 1.7;
 }
 
-.home-page .category-card:hover {
-    transform: translateY(-4px);
-}
 
-@media (max-width: 950px) {
+/* =========================================
+   MOBILE
+========================================= */
 
-    .home-page .article-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
+@media (max-width: 800px) {
 
-}
-
-@media (max-width: 650px) {
-
-    .home-page .article-grid {
+    .latest-grid {
         grid-template-columns: 1fr;
     }
 
-    .home-page .article-body {
-        padding: 24px;
+}
+
+
+@media (max-width: 600px) {
+
+    .latest-section {
+        padding-top: 10px;
+
+        padding-bottom: 60px;
+    }
+
+
+    .latest-card-image {
+        height: 210px;
+    }
+
+
+    .latest-card-content {
+        padding: 23px;
+    }
+
+
+    .latest-card h3 {
+        font-size: 1.25rem;
+    }
+
+}
+
+
+@media (max-width: 400px) {
+
+    .latest-card-image {
+        height: 185px;
     }
 
 }
@@ -235,8 +263,12 @@ CurioPress — Discover Something Worth Knowing
 </head>
 
 
-<body class="home-page">
+<body>
 
+
+<!-- =========================================
+     HEADER
+========================================= -->
 
 <header class="site-header">
 
@@ -282,25 +314,31 @@ CurioPress — Discover Something Worth Knowing
                 Home
             </a>
 
+
             <a href="categories/technology.html">
                 Technology
             </a>
+
 
             <a href="categories/ai.html">
                 AI
             </a>
 
+
             <a href="categories/education.html">
                 Education
             </a>
+
 
             <a href="categories/coding.html">
                 Coding
             </a>
 
+
             <a href="categories/general-knowledge.html">
                 GK
             </a>
+
 
             <a href="about.html">
                 About
@@ -308,15 +346,22 @@ CurioPress — Discover Something Worth Knowing
 
         </nav>
 
-
     </div>
 
 </header>
 
 
 
+<!-- =========================================
+     MAIN
+========================================= -->
+
 <main>
 
+
+<!-- =========================================
+     HERO
+========================================= -->
 
 <section class="hero container">
 
@@ -354,7 +399,7 @@ CurioPress — Discover Something Worth Knowing
 
             <a
                 class="button button-secondary"
-                href="#categories"
+                href="categories/technology.html"
             >
                 Browse Categories
             </a>
@@ -393,439 +438,61 @@ CurioPress — Discover Something Worth Knowing
 
 
 
-<section
-    class="container section"
-    id="categories"
->
-
-
-    <div class="section-heading">
-
-
-        <div>
-
-            <span class="eyebrow">
-                Explore
-            </span>
-
-
-            <h2>
-                Browse by Category
-            </h2>
-
-        </div>
-
-
-    </div>
-
-
-
-    <div class="category-grid">
-
-
-        <a
-            class="category-card"
-            href="categories/technology.html"
-        >
-
-            <span class="category-icon">
-                ⌁
-            </span>
-
-            <span class="category-label">
-                Technology
-            </span>
-
-            <span class="category-description">
-                Useful technology explained simply.
-            </span>
-
-        </a>
-
-
-
-        <a
-            class="category-card"
-            href="categories/ai.html"
-        >
-
-            <span class="category-icon">
-                ✦
-            </span>
-
-            <span class="category-label">
-                AI
-            </span>
-
-            <span class="category-description">
-                Artificial intelligence without the confusion.
-            </span>
-
-        </a>
-
-
-
-        <a
-            class="category-card"
-            href="categories/education.html"
-        >
-
-            <span class="category-icon">
-                ▣
-            </span>
-
-            <span class="category-label">
-                Education
-            </span>
-
-            <span class="category-description">
-                Learning, study and educational ideas.
-            </span>
-
-        </a>
-
-
-
-        <a
-            class="category-card"
-            href="categories/coding.html"
-        >
-
-            <span class="category-icon">
-                &lt;/&gt;
-            </span>
-
-            <span class="category-label">
-                Coding
-            </span>
-
-            <span class="category-description">
-                Programming concepts and practical guides.
-            </span>
-
-        </a>
-
-
-
-        <a
-            class="category-card"
-            href="categories/general-knowledge.html"
-        >
-
-            <span class="category-icon">
-                ?
-            </span>
-
-            <span class="category-label">
-                General Knowledge
-            </span>
-
-            <span class="category-description">
-                Interesting facts and useful knowledge.
-            </span>
-
-        </a>
-
-
-    </div>
-
-
-</section>
-
-
+<!-- =========================================
+     LATEST ARTICLES ONLY
+========================================= -->
 
 <section
-    class="container section"
+    class="container section latest-section"
     id="latest"
 >
 
 
-    <div class="section-heading">
+    <div class="latest-heading">
 
 
-        <div>
-
-            <span class="eyebrow">
-                Latest
-            </span>
+        <span class="eyebrow">
+            Latest
+        </span>
 
 
-            <h2>
-                Latest Articles
-            </h2>
-
-        </div>
+        <h2>
+            Latest Articles
+        </h2>
 
 
     </div>
 
 
 
-    <div class="article-grid">
+    <div class="latest-grid">
 
 
-        <!-- AI -->
+        <!-- =================================
+             ARTICLE 1 — AI
+        ================================== -->
 
-        <article class="article-card">
-
-
-            <div class="article-image">
-                Generative AI
-            </div>
-
-
-            <div class="article-body">
+        <a
+            class="latest-card"
+            href="categories/ai.html"
+        >
 
 
-                <span class="category-pill">
-                    AI
-                </span>
+            <div class="latest-card-image">
 
-
-                <h3>
-                    How Large Language Models Like ChatGPT Actually Work
-                </h3>
-
-
-                <p>
-                    Understand tokens, training, neural networks,
-                    Transformers, attention and how large language
-                    models generate responses.
-                </p>
-
-
-                <div class="article-meta">
-
-                    <span>
-                        AI
-                    </span>
-
-                    <span>
-                        •
-                    </span>
-
-                    <span>
-                        In-depth
-                    </span>
-
-                </div>
-
-
-                <a
-                    class="article-read"
-                    href="posts/how-llms-work.html"
+                <img
+                    src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80"
+                    alt="Artificial intelligence"
+                    loading="lazy"
                 >
-                    Read Article →
-                </a>
-
 
             </div>
 
 
-        </article>
+            <div class="latest-card-content">
 
 
-
-        <!-- TECHNOLOGY -->
-
-        <article class="article-card">
-
-
-            <div class="article-image">
-                Cybersecurity
-            </div>
-
-
-            <div class="article-body">
-
-
-                <span class="category-pill">
-                    Technology
-                </span>
-
-
-                <h3>
-                    Cybersecurity: How the Digital World Protects Itself
-                </h3>
-
-
-                <p>
-                    Learn how cybersecurity protects digital systems
-                    through authentication, encryption, monitoring,
-                    access control and multiple layers of defense.
-                </p>
-
-
-                <div class="article-meta">
-
-                    <span>
-                        Technology
-                    </span>
-
-                    <span>
-                        •
-                    </span>
-
-                    <span>
-                        In-depth
-                    </span>
-
-                </div>
-
-
-                <a
-                    class="article-read"
-                    href="posts/cybersecurity.html"
-                >
-                    Read Article →
-                </a>
-
-
-            </div>
-
-
-        </article>
-
-
-
-        <!-- CODING -->
-
-        <article class="article-card">
-
-
-            <div class="article-image">
-                Coding
-            </div>
-
-
-            <div class="article-body">
-
-
-                <span class="category-pill">
-                    Coding
-                </span>
-
-
-                <h3>
-                    How Programming Languages Actually Work
-                </h3>
-
-
-                <p>
-                    Understand source code, compilers, interpreters,
-                    runtimes and how programming instructions become
-                    executable programs.
-                </p>
-
-
-                <div class="article-meta">
-
-                    <span>
-                        Coding
-                    </span>
-
-                    <span>
-                        •
-                    </span>
-
-                    <span>
-                        In-depth
-                    </span>
-
-                </div>
-
-
-                <a
-                    class="article-read"
-                    href="posts/how-programming-languages-work.html"
-                >
-                    Read Article →
-                </a>
-
-
-            </div>
-
-
-        </article>
-
-
-
-        <!-- GK -->
-
-        <article class="article-card">
-
-
-            <div class="article-image">
-                Human Brain
-            </div>
-
-
-            <div class="article-body">
-
-
-                <span class="category-pill">
-                    General Knowledge
-                </span>
-
-
-                <h3>
-                    How the Human Brain Creates and Stores Memories
-                </h3>
-
-
-                <p>
-                    Discover how encoding, working memory, long-term
-                    memory, retrieval, forgetting and sleep influence
-                    human memory.
-                </p>
-
-
-                <div class="article-meta">
-
-                    <span>
-                        General Knowledge
-                    </span>
-
-                    <span>
-                        •
-                    </span>
-
-                    <span>
-                        In-depth
-                    </span>
-
-                </div>
-
-
-                <a
-                    class="article-read"
-                    href="posts/how-human-memory-works.html"
-                >
-                    Read Article →
-                </a>
-
-
-            </div>
-
-
-        </article>
-
-
-
-        <!-- AI -->
-
-        <article class="article-card">
-
-
-            <div class="article-image">
-                Machine Learning
-            </div>
-
-
-            <div class="article-body">
-
-
-                <span class="category-pill">
+                <span class="latest-category">
                     AI
                 </span>
 
@@ -837,58 +504,93 @@ CurioPress — Discover Something Worth Knowing
 
 
                 <p>
-                    Learn what machine learning is, how training data
-                    is used, how neural networks learn and why models
-                    sometimes fail.
+                    Learn what machine learning is, how training
+                    data is used, how neural networks learn and
+                    why models sometimes fail.
                 </p>
 
 
-                <div class="article-meta">
-
-                    <span>
-                        AI
-                    </span>
-
-                    <span>
-                        •
-                    </span>
-
-                    <span>
-                        In-depth
-                    </span>
-
-                </div>
+            </div>
 
 
-                <a
-                    class="article-read"
-                    href="posts/ai-and-machine-learning.html"
+        </a>
+
+
+
+        <!-- =================================
+             ARTICLE 2 — TECHNOLOGY
+        ================================== -->
+
+        <a
+            class="latest-card"
+            href="categories/technology.html"
+        >
+
+
+            <div class="latest-card-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=1200&q=80"
+                    alt="Cybersecurity and digital security"
+                    loading="lazy"
                 >
-                    Read Article →
-                </a>
+
+            </div>
+
+
+            <div class="latest-card-content">
+
+
+                <span class="latest-category">
+                    Technology
+                </span>
+
+
+                <h3>
+                    Cybersecurity: How the Digital World
+                    Protects Itself
+                </h3>
+
+
+                <p>
+                    Understand cyber threats, malware, phishing,
+                    encryption, authentication and the principles
+                    used to protect modern digital systems.
+                </p>
 
 
             </div>
 
 
-        </article>
+        </a>
 
 
 
-        <!-- CODING -->
+        <!-- =================================
+             ARTICLE 3 — CODING
+        ================================== -->
 
-        <article class="article-card">
+        <a
+            class="latest-card"
+            href="categories/coding.html"
+        >
 
 
-            <div class="article-image">
-                Algorithms
+            <div class="latest-card-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1200&q=80"
+                    alt="Programming code"
+                    loading="lazy"
+                >
+
             </div>
 
 
-            <div class="article-body">
+            <div class="latest-card-content">
 
 
-                <span class="category-pill">
+                <span class="latest-category">
                     Coding
                 </span>
 
@@ -900,325 +602,64 @@ CurioPress — Discover Something Worth Knowing
 
 
                 <p>
-                    Understand how algorithms solve problems and how
-                    data structures organize information for efficient
-                    software.
+                    Understand how algorithms solve problems and
+                    how data structures organize information for
+                    efficient software.
                 </p>
 
 
-                <div class="article-meta">
-
-                    <span>
-                        Coding
-                    </span>
-
-                    <span>
-                        •
-                    </span>
-
-                    <span>
-                        In-depth
-                    </span>
-
-                </div>
+            </div>
 
 
-                <a
-                    class="article-read"
-                    href="posts/algorithms-and-data-structures.html"
+        </a>
+
+
+
+        <!-- =================================
+             ARTICLE 4 — GENERAL KNOWLEDGE
+        ================================== -->
+
+        <a
+            class="latest-card"
+            href="categories/general-knowledge.html"
+        >
+
+
+            <div class="latest-card-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=1200&q=80"
+                    alt="Human brain and memory"
+                    loading="lazy"
                 >
-                    Read Article →
-                </a>
-
 
             </div>
 
 
-        </article>
+            <div class="latest-card-content">
 
 
-
-        <!-- TECHNOLOGY -->
-
-        <article class="article-card">
-
-
-            <div class="article-image">
-                Internet
-            </div>
-
-
-            <div class="article-body">
-
-
-                <span class="category-pill">
-                    Technology
-                </span>
-
-
-                <h3>
-                    How the Internet Actually Works
-                </h3>
-
-
-                <p>
-                    Understand DNS, IP addresses, packets, routers,
-                    servers, HTTP and the infrastructure behind the
-                    internet.
-                </p>
-
-
-                <div class="article-meta">
-
-                    <span>
-                        Technology
-                    </span>
-
-                    <span>
-                        •
-                    </span>
-
-                    <span>
-                        In-depth
-                    </span>
-
-                </div>
-
-
-                <a
-                    class="article-read"
-                    href="posts/how-the-internet-works.html"
-                >
-                    Read Article →
-                </a>
-
-
-            </div>
-
-
-        </article>
-
-
-
-        <!-- GK -->
-
-        <article class="article-card">
-
-
-            <div class="article-image">
-                Earth & Climate
-            </div>
-
-
-            <div class="article-body">
-
-
-                <span class="category-pill">
+                <span class="latest-category">
                     General Knowledge
                 </span>
 
 
                 <h3>
-                    How Earth's Climate System Actually Works
+                    How the Human Brain Creates and
+                    Stores Memories
                 </h3>
 
 
                 <p>
-                    Understand Earth's energy balance, atmosphere,
-                    oceans, greenhouse effect, ice and climate
-                    feedbacks.
+                    Discover how encoding, working memory,
+                    long-term memory, retrieval and sleep
+                    influence human memory.
                 </p>
 
 
-                <div class="article-meta">
-
-                    <span>
-                        General Knowledge
-                    </span>
-
-                    <span>
-                        •
-                    </span>
-
-                    <span>
-                        In-depth
-                    </span>
-
-                </div>
-
-
-                <a
-                    class="article-read"
-                    href="posts/how-earth-climate-works.html"
-                >
-                    Read Article →
-                </a>
-
-
             </div>
 
 
-        </article>
-
-
-
-        <!-- TECHNOLOGY -->
-
-        <article class="article-card">
-
-
-            <div class="article-image">
-                Data Centers
-            </div>
-
-
-            <div class="article-body">
-
-
-                <span class="category-pill">
-                    Technology
-                </span>
-
-
-                <h3>
-                    What Happens Inside a Modern Data Center?
-                </h3>
-
-
-                <p>
-                    Discover how servers, storage, networking,
-                    electricity, cooling and redundancy keep digital
-                    services running.
-                </p>
-
-
-                <div class="article-meta">
-
-                    <span>
-                        Technology
-                    </span>
-
-                    <span>
-                        •
-                    </span>
-
-                    <span>
-                        In-depth
-                    </span>
-
-                </div>
-
-
-                <a
-                    class="article-read"
-                    href="posts/data-centers.html"
-                >
-                    Read Article →
-                </a>
-
-
-            </div>
-
-
-        </article>
-
-
-
-        <!-- TECHNOLOGY -->
-
-        <article class="article-card">
-
-
-            <div class="article-image">
-                Computing
-            </div>
-
-
-            <div class="article-body">
-
-
-                <span class="category-pill">
-                    Technology
-                </span>
-
-
-                <h3>
-                    From Bits to Computing: How Computers Process Information
-                </h3>
-
-
-                <p>
-                    Learn how binary, processors, memory, storage and
-                    software work together to make modern computers
-                    function.
-                </p>
-
-
-                <div class="article-meta">
-
-                    <span>
-                        Technology
-                    </span>
-
-                    <span>
-                        •
-                    </span>
-
-                    <span>
-                        In-depth
-                    </span>
-
-                </div>
-
-
-                <a
-                    class="article-read"
-                    href="posts/how-computers-work.html"
-                >
-                    Read Article →
-                </a>
-
-
-            </div>
-
-
-        </article>
-
-
-    </div>
-
-
-</section>
-
-
-
-<section class="container">
-
-
-    <div class="newsletter">
-
-
-        <div>
-
-            <h2>
-                Stay curious.
-            </h2>
-
-
-            <p>
-                CurioPress is built to make useful knowledge
-                easier to discover and understand.
-            </p>
-
-
-        </div>
-
-
-        <a
-            class="button button-secondary"
-            href="about.html"
-        >
-            About CurioPress
         </a>
 
 
@@ -1231,6 +672,10 @@ CurioPress — Discover Something Worth Knowing
 </main>
 
 
+
+<!-- =========================================
+     FOOTER
+========================================= -->
 
 <footer class="site-footer">
 
@@ -1355,4 +800,3 @@ CurioPress — Discover Something Worth Knowing
 </body>
 
 </html>
-```1
