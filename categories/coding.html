@@ -1,211 +1,498 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
 
-<title>Coding — CurioPress</title>
+<title>
+Coding — CurioPress
+</title>
 
 <meta
-name="description"
-content="Programming concepts, development guides and practical coding knowledge from CurioPress."
+    name="description"
+    content="Important programming concepts explained clearly with practical and detailed articles."
 >
 
-<meta name="robots" content="index, follow">
+<meta
+    name="robots"
+    content="index, follow"
+>
 
 <link
-rel="canonical"
-href="https://curiopress.github.io/categories/coding.html"
+    rel="canonical"
+    href="https://curiopress.github.io/categories/coding.html"
 >
 
-<link rel="stylesheet" href="../css/main.css">
-<link rel="stylesheet" href="../css/themes/coding.css">
+<link
+    rel="stylesheet"
+    href="../css/main.css"
+>
+
+<link
+    rel="stylesheet"
+    href="../css/themes/coding.css"
+>
+
+<style>
+
+.coding-page {
+    min-height: 100vh;
+}
+
+.coding-page .article-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+}
+
+.coding-page .article-card {
+    background: #ffffff;
+    border: 1px solid #dbeafe;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(30, 64, 175, 0.08);
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.coding-page .article-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 40px rgba(30, 64, 175, 0.14);
+}
+
+.coding-page .article-image {
+    min-height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #DBEAFE, #BFDBFE);
+    color: #1D4ED8;
+    font-weight: 800;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+.coding-page .article-body {
+    padding: 30px;
+}
+
+.coding-page .category-pill {
+    display: inline-flex;
+    padding: 7px 13px;
+    border-radius: 999px;
+    background: #DBEAFE;
+    color: #1D4ED8;
+    font-weight: 800;
+    font-size: .8rem;
+}
+
+.coding-page .article-card h3 {
+    color: #102A43;
+    font-size: 1.6rem;
+    line-height: 1.25;
+    margin: 18px 0 14px;
+}
+
+.coding-page .article-card p {
+    color: #52606D;
+    line-height: 1.7;
+    margin-bottom: 24px;
+}
+
+.coding-read {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 20px;
+    border-radius: 12px;
+    background: #2563EB;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.coding-read:hover {
+    background: #1D4ED8;
+}
+
+@media (max-width: 800px) {
+
+    .coding-page .article-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .coding-page .article-body {
+        padding: 24px;
+    }
+
+    .coding-page .article-card h3 {
+        font-size: 1.4rem;
+    }
+
+}
+
+</style>
 
 </head>
 
-<body>
+
+<body class="coding-page">
+
 
 <header class="site-header">
 
-<div class="container nav-wrap">
+    <div class="container nav-wrap">
 
-<a class="brand" href="../index.html">
-<span class="brand-mark">C</span>
-<span class="brand-name">CurioPress</span>
-</a>
+        <a
+            class="brand"
+            href="../index.html"
+            aria-label="CurioPress Home"
+        >
 
-<button
-class="menu-toggle"
-type="button"
-aria-label="Open navigation"
-aria-expanded="false"
->
-☰
-</button>
+            <span class="brand-mark">
+                C
+            </span>
 
-<nav class="main-nav">
+            <span class="brand-name">
+                CurioPress
+            </span>
 
-<a href="../index.html">Home</a>
-<a href="technology.html">Technology</a>
-<a href="ai.html">AI</a>
-<a href="education.html">Education</a>
-<a class="active" href="coding.html">Coding</a>
-<a href="general-knowledge.html">GK</a>
-<a href="../about.html">About</a>
+        </a>
 
-</nav>
 
-</div>
+        <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+        >
+            ☰
+        </button>
+
+
+        <nav
+            class="main-nav"
+            aria-label="Main navigation"
+        >
+
+            <a href="../index.html">
+                Home
+            </a>
+
+            <a href="technology.html">
+                Technology
+            </a>
+
+            <a href="ai.html">
+                AI
+            </a>
+
+            <a
+                class="active"
+                href="coding.html"
+            >
+                Coding
+            </a>
+
+            <a href="education.html">
+                Education
+            </a>
+
+            <a href="general-knowledge.html">
+                GK
+            </a>
+
+            <a href="../about.html">
+                About
+            </a>
+
+        </nav>
+
+    </div>
 
 </header>
 
 
 <main>
 
+
 <section class="hero container">
 
-<div class="hero-copy">
+    <div class="hero-copy">
 
-<span class="eyebrow">
-CurioPress • Coding
-</span>
+        <span class="eyebrow">
+            CurioPress • Coding
+        </span>
 
-<h1>
-Coding
-</h1>
+        <h1>
+            Understand how code works.
+        </h1>
 
-<p>
-Programming concepts, development guides and practical coding knowledge.
-</p>
+        <p>
+            Important programming concepts explained clearly,
+            from programming languages and algorithms to the
+            foundations of modern software.
+        </p>
 
-<div class="hero-actions">
+        <div class="hero-actions">
 
-<a class="button button-primary" href="#latest">
-Explore Articles
-</a>
+            <a
+                class="button button-primary"
+                href="#articles"
+            >
+                Explore Articles
+            </a>
 
-<a class="button button-secondary" href="../index.html#categories">
-All Categories
-</a>
+            <a
+                class="button button-secondary"
+                href="../index.html#categories"
+            >
+                All Categories
+            </a>
 
-</div>
+        </div>
 
-</div>
+    </div>
 
 
-<div class="hero-card">
+    <div class="hero-card">
 
-<span class="hero-card-label">
-Coding
-</span>
+        <span class="hero-card-label">
+            CODING
+        </span>
 
-<h2>
-Build by understanding.
-</h2>
+        <h2>
+            Programming concepts worth understanding.
+        </h2>
 
-<p>
-Programming concepts explained in a practical and beginner-friendly way.
-</p>
+        <p>
+            Learn the foundations behind the software
+            and applications we use every day.
+        </p>
 
-</div>
+    </div>
+
+</section>
+
+
+
+<section
+    class="container section"
+    id="articles"
+>
+
+    <div class="section-heading">
+
+        <div>
+
+            <span class="eyebrow">
+                Articles
+            </span>
+
+            <h2>
+                Latest Coding Posts
+            </h2>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="article-grid">
+
+
+        <article class="article-card">
+
+            <div class="article-image">
+                Programming
+            </div>
+
+
+            <div class="article-body">
+
+                <span class="category-pill">
+                    Coding
+                </span>
+
+
+                <h3>
+                    How Programming Languages Actually Work
+                </h3>
+
+
+                <p>
+                    Understand source code, compilers, interpreters,
+                    runtime environments and how human instructions
+                    become executable programs.
+                </p>
+
+
+                <a
+                    class="coding-read"
+                    href="../posts/how-programming-languages-work.html"
+                >
+                    Read Article →
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <article class="article-card">
+
+            <div class="article-image">
+                Algorithms
+            </div>
+
+
+            <div class="article-body">
+
+                <span class="category-pill">
+                    Coding
+                </span>
+
+
+                <h3>
+                    Algorithms and Data Structures:
+                    The Foundation of Software
+                </h3>
+
+
+                <p>
+                    Learn why algorithms and data structures matter,
+                    how they organize information and how they affect
+                    the performance of software.
+                </p>
+
+
+                <a
+                    class="coding-read"
+                    href="../posts/algorithms-and-data-structures.html"
+                >
+                    Read Article →
+                </a>
+
+            </div>
+
+        </article>
+
+
+    </div>
 
 </section>
 
-
-<section class="container section" id="latest">
-
-<div class="section-heading">
-
-<div>
-<span class="eyebrow">Articles</span>
-<h2>Latest Coding Posts</h2>
-</div>
-
-</div>
-
-
-<div class="article-grid">
-
-<article class="article-card">
-
-<div class="article-image">
-Coming Soon
-</div>
-
-<div class="article-body">
-
-<span class="category-pill">
-Coding
-</span>
-
-<h3>
-Your first coding article
-</h3>
-
-<p>
-Your published coding posts will appear here.
-</p>
-
-<div class="article-meta">
-<span>CurioPress</span>
-<span>•</span>
-<span>Coming Soon</span>
-</div>
-
-</div>
-
-</article>
-
-</div>
-
-</section>
 
 </main>
 
 
+
 <footer class="site-footer">
 
-<div class="container footer-grid">
+    <div class="container footer-grid">
 
-<div>
-<a class="brand" href="../index.html">
-<span class="brand-mark">C</span>
-<span class="brand-name">CurioPress</span>
-</a>
+        <div>
 
-<p>
-A modern knowledge blog for curious minds.
-</p>
-</div>
+            <a
+                class="brand"
+                href="../index.html"
+            >
 
-<div>
-<h2>Explore</h2>
-<a href="technology.html">Technology</a>
-<a href="ai.html">AI</a>
-<a href="education.html">Education</a>
-<a href="coding.html">Coding</a>
-<a href="general-knowledge.html">General Knowledge</a>
-</div>
+                <span class="brand-mark">
+                    C
+                </span>
 
-<div>
-<h2>Website</h2>
-<a href="../about.html">About</a>
-<a href="../contact.html">Contact</a>
-<a href="../privacy.html">Privacy Policy</a>
-<a href="../disclaimer.html">Disclaimer</a>
-</div>
+                <span class="brand-name">
+                    CurioPress
+                </span>
 
-</div>
+            </a>
 
-<div class="container footer-bottom">
-© 2026 CurioPress. All rights reserved.
-</div>
+            <p>
+                A modern knowledge blog for curious minds.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h2>
+                Explore
+            </h2>
+
+            <a href="technology.html">
+                Technology
+            </a>
+
+            <a href="ai.html">
+                AI
+            </a>
+
+            <a href="coding.html">
+                Coding
+            </a>
+
+            <a href="education.html">
+                Education
+            </a>
+
+            <a href="general-knowledge.html">
+                General Knowledge
+            </a>
+
+        </div>
+
+
+        <div>
+
+            <h2>
+                Website
+            </h2>
+
+            <a href="../about.html">
+                About
+            </a>
+
+            <a href="../contact.html">
+                Contact
+            </a>
+
+            <a href="../privacy.html">
+                Privacy Policy
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="container footer-bottom">
+
+        <span>
+            © 2026 CurioPress. All rights reserved.
+        </span>
+
+    </div>
 
 </footer>
 
+
+
 <script src="../js/main.js"></script>
 
+
 </body>
+
 </html>
