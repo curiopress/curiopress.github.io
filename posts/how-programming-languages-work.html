@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>How Programming Languages Actually Work | CurioPress</title>
+
+<meta name="description" content="A detailed explanation of how programming languages work, including source code, compilers, interpreters, runtimes and machine code.">
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://curiopress.github.io/posts/how-programming-languages-work.html">
+
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/themes/coding.css">
+
+<style>
+.article-page {
+    background: #f5f9ff;
+    min-height: 100vh;
+}
+
+.article-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 70px 20px 90px;
+}
+
+.article-header {
+    background: #ffffff;
+    border: 1px solid #dbeafe;
+    border-radius: 28px;
+    padding: 45px;
+    margin-bottom: 30px;
+    box-shadow: 0 12px 35px rgba(30,64,175,.08);
+}
+
+.article-category {
+    color: #2563eb;
+    font-weight: 800;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    font-size: .85rem;
+}
+
+.article-header h1 {
+    color: #102a43;
+    font-size: clamp(2.2rem, 6vw, 4rem);
+    line-height: 1.1;
+    margin: 18px 0;
+}
+
+.article-intro {
+    color: #52606d;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.article-content {
+    background: #ffffff;
+    border: 1px solid #dbeafe;
+    border-radius: 28px;
+    padding: 45px;
+    box-shadow: 0 12px 35px rgba(30,64,175,.06);
+}
+
+.article-content h2 {
+    color: #102a43;
+    margin-top: 42px;
+    margin-bottom: 15px;
+}
+
+.article-content h3 {
+    color: #1e3a5f;
+    margin-top: 30px;
+}
+
+.article-content p,
+.article-content li {
+    color: #52606d;
+    font-size: 1.05rem;
+    line-height: 1.85;
+}
+
+.article-content ul,
+.article-content ol {
+    padding-left: 25px;
+}
+
+.article-content strong {
+    color: #102a43;
+}
+
+.article-note {
+    background: #eff6ff;
+    border-left: 5px solid #2563eb;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 28px 0;
+}
+
+@media(max-width:600px) {
+    .article-container {
+        padding: 35px 15px 60px;
+    }
+
+    .article-header,
+    .article-content {
+        padding: 25px;
+        border-radius: 20px;
+    }
+}
+</style>
+</head>
+
+<body class="article-page">
+
+<header class="site-header">
+<div class="container nav-wrap">
+
+<a class="brand" href="../index.html">
+<span class="brand-mark">C</span>
+<span class="brand-name">CurioPress</span>
+</a>
+
+<button class="menu-toggle" type="button" aria-label="Open navigation menu">
+☰
+</button>
+
+<nav class="main-nav">
+<a href="../index.html">Home</a>
+<a href="../categories/technology.html">Technology</a>
+<a href="../categories/ai.html">AI</a>
+<a class="active" href="../categories/coding.html">Coding</a>
+<a href="../categories/education.html">Education</a>
+<a href="../categories/general-knowledge.html">GK</a>
+</nav>
+
+</div>
+</header>
+
+<main>
+
+<div class="article-container">
+
+<header class="article-header">
+
+<div class="article-category">
+Coding
+</div>
+
+<h1>
+How Programming Languages Actually Work
+</h1>
+
+<p class="article-intro">
+Programming languages allow humans to describe instructions in a form
+that computers can execute. But what actually happens between writing
+code and seeing a program run? This article explains the complete journey
+from source code to machine instructions.
+</p>
+
+</header>
+
+<article class="article-content">
+
+<h2>What Is a Programming Language?</h2>
+
+<p>
+A programming language is a formal system used to express instructions
+that a computer can process. Languages such as Python, JavaScript, Java,
+C, C++ and Rust provide different ways of expressing algorithms,
+data structures and operations.
+</p>
+
+<p>
+Computers ultimately execute very low-level instructions. Humans,
+however, need abstractions that are easier to understand and maintain.
+Programming languages provide that abstraction.
+</p>
+
+<div class="article-note">
+<strong>Key idea:</strong> Your source code is usually not executed
+directly in the exact form in which you wrote it. Some translation or
+execution mechanism connects your code to the processor.
+</div>
+
+<h2>Source Code</h2>
+
+<p>
+The code written by a developer is called source code. For example,
+a programmer might write a function, a loop, a conditional statement
+or a class using the rules of a particular programming language.
+</p>
+
+<p>
+The source code contains concepts that are meaningful to humans:
+variables, functions, objects, conditions and loops. The computer must
+eventually convert these ideas into operations that its hardware can
+perform.
+</p>
+
+<h2>What Does a Compiler Do?</h2>
+
+<p>
+A compiler translates source code into another form that can be executed
+by a computer or by another runtime environment.
+</p>
+
+<p>
+A typical compilation process can involve several stages:
+</p>
+
+<ol>
+<li>Reading and analyzing the source code.</li>
+<li>Checking whether the code follows the language rules.</li>
+<li>Building an internal representation of the program.</li>
+<li>Optimizing that representation.</li>
+<li>Generating lower-level instructions.</li>
+<li>Producing an executable or another intermediate form.</li>
+</ol>
+
+<p>
+Languages such as C and C++ are commonly associated with traditional
+ahead-of-time compilation, although modern language ecosystems can use
+multiple compilation techniques.
+</p>
+
+<h2>What Is an Interpreter?</h2>
+
+<p>
+An interpreter executes a program through a runtime system rather than
+requiring the entire source program to become a native executable before
+execution.
+</p>
+
+<p>
+The exact implementation differs between languages. Some interpreters
+directly execute instructions represented internally, while others use
+bytecode or other intermediate representations.
+</p>
+
+<h2>What Is Bytecode?</h2>
+
+<p>
+Some programming environments compile source code into an intermediate
+representation called bytecode. That bytecode can then be executed by
+a virtual machine or runtime.
+</p>
+
+<p>
+This approach separates the language from the exact processor on which
+the program eventually runs. Java bytecode executed by the Java Virtual
+Machine is a well-known example.
+</p>
+
+<h2>What Is a Runtime?</h2>
+
+<p>
+A runtime is the environment that provides the mechanisms needed while
+a program is executing.
+</p>
+
+<p>
+Depending on the language, a runtime may handle things such as memory
+management, garbage collection, libraries, exception handling,
+concurrency and interaction with the operating system.
+</p>
+
+<h2>From Code to Machine Instructions</h2>
+
+<p>
+At the lowest level, processors execute machine instructions. These
+instructions perform operations such as arithmetic, comparisons, moving
+data and controlling program flow.
+</p>
+
+<p>
+The exact instruction set depends on the processor architecture. Modern
+devices may use architectures such as ARM or x86-64.
+</p>
+
+<h2>Why Do Different Languages Exist?</h2>
+
+<p>
+Programming languages are designed with different goals. Some prioritize
+performance and control over hardware. Others prioritize developer
+productivity, safety, simplicity or rapid development.
+</p>
+
+<p>
+For example, a language designed for systems programming may expose more
+control over memory and hardware, while a high-level scripting language
+may provide abstractions that make everyday development faster.
+</p>
+
+<h2>Why Abstraction Matters</h2>
+
+<p>
+Without abstraction, programmers would have to work much closer to
+processor instructions and hardware details. Programming languages allow
+developers to describe complex operations using structures that are
+easier to reason about.
+</p>
+
+<p>
+Modern software is therefore built on layers: applications depend on
+libraries, libraries depend on runtimes and operating systems, and the
+operating system ultimately interacts with hardware.
+</p>
+
+<h2>Conclusion</h2>
+
+<p>
+Programming languages form a bridge between human ideas and machine
+execution. Depending on the language and platform, source code may be
+compiled, interpreted, transformed into bytecode or processed through
+several stages before reaching the processor.
+</p>
+
+<p>
+Understanding this pipeline makes many programming concepts easier to
+understand because it reveals what is happening underneath the code
+we write every day.
+</p>
+
+</article>
+
+</div>
+
+</main>
+
+<footer class="site-footer">
+<div class="container footer-bottom">
+<span>© 2026 CurioPress. All rights reserved.</span>
+</div>
+</footer>
+
+<script src="../js/main.js"></script>
+
+</body>
+</html>
