@@ -1,211 +1,497 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
 
-<title>General Knowledge — CurioPress</title>
+<title>
+General Knowledge — CurioPress
+</title>
 
 <meta
-name="description"
-content="Interesting facts, explanations and useful general knowledge from CurioPress."
+    name="description"
+    content="Interesting and important general knowledge explained through detailed, easy-to-understand articles."
 >
 
-<meta name="robots" content="index, follow">
+<meta
+    name="robots"
+    content="index, follow"
+>
 
 <link
-rel="canonical"
-href="https://curiopress.github.io/categories/general-knowledge.html"
+    rel="canonical"
+    href="https://curiopress.github.io/categories/general-knowledge.html"
 >
 
-<link rel="stylesheet" href="../css/main.css">
-<link rel="stylesheet" href="../css/themes/gk.css">
+<link
+    rel="stylesheet"
+    href="../css/main.css"
+>
+
+<link
+    rel="stylesheet"
+    href="../css/themes/gk.css"
+>
+
+<style>
+
+.gk-page {
+    min-height: 100vh;
+}
+
+.gk-page .article-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+}
+
+.gk-page .article-card {
+    background: #ffffff;
+    border: 1px solid #F3D28B;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(120, 53, 15, 0.08);
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.gk-page .article-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 40px rgba(120, 53, 15, 0.14);
+}
+
+.gk-page .article-image {
+    min-height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #FEF3C7, #FDE68A);
+    color: #92400E;
+    font-weight: 800;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+.gk-page .article-body {
+    padding: 30px;
+}
+
+.gk-page .category-pill {
+    display: inline-flex;
+    padding: 7px 13px;
+    border-radius: 999px;
+    background: #FEF3C7;
+    color: #92400E;
+    font-weight: 800;
+    font-size: .8rem;
+}
+
+.gk-page .article-card h3 {
+    color: #78350F;
+    font-size: 1.6rem;
+    line-height: 1.25;
+    margin: 18px 0 14px;
+}
+
+.gk-page .article-card p {
+    color: #6B4A32;
+    line-height: 1.7;
+    margin-bottom: 24px;
+}
+
+.gk-read {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 20px;
+    border-radius: 12px;
+    background: #D97706;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.gk-read:hover {
+    background: #B45309;
+}
+
+@media (max-width: 800px) {
+
+    .gk-page .article-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .gk-page .article-body {
+        padding: 24px;
+    }
+
+    .gk-page .article-card h3 {
+        font-size: 1.4rem;
+    }
+
+}
+
+</style>
 
 </head>
 
-<body>
+
+<body class="gk-page">
+
 
 <header class="site-header">
 
-<div class="container nav-wrap">
+    <div class="container nav-wrap">
 
-<a class="brand" href="../index.html">
-<span class="brand-mark">C</span>
-<span class="brand-name">CurioPress</span>
-</a>
+        <a
+            class="brand"
+            href="../index.html"
+            aria-label="CurioPress Home"
+        >
 
-<button
-class="menu-toggle"
-type="button"
-aria-label="Open navigation"
-aria-expanded="false"
->
-☰
-</button>
+            <span class="brand-mark">
+                C
+            </span>
 
-<nav class="main-nav">
+            <span class="brand-name">
+                CurioPress
+            </span>
 
-<a href="../index.html">Home</a>
-<a href="technology.html">Technology</a>
-<a href="ai.html">AI</a>
-<a href="education.html">Education</a>
-<a href="coding.html">Coding</a>
-<a class="active" href="general-knowledge.html">GK</a>
-<a href="../about.html">About</a>
+        </a>
 
-</nav>
 
-</div>
+        <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+        >
+            ☰
+        </button>
+
+
+        <nav
+            class="main-nav"
+            aria-label="Main navigation"
+        >
+
+            <a href="../index.html">
+                Home
+            </a>
+
+            <a href="technology.html">
+                Technology
+            </a>
+
+            <a href="ai.html">
+                AI
+            </a>
+
+            <a href="coding.html">
+                Coding
+            </a>
+
+            <a href="education.html">
+                Education
+            </a>
+
+            <a
+                class="active"
+                href="general-knowledge.html"
+            >
+                GK
+            </a>
+
+            <a href="../about.html">
+                About
+            </a>
+
+        </nav>
+
+    </div>
 
 </header>
 
 
+
 <main>
+
 
 <section class="hero container">
 
-<div class="hero-copy">
+    <div class="hero-copy">
 
-<span class="eyebrow">
-CurioPress • General Knowledge
-</span>
+        <span class="eyebrow">
+            CurioPress • General Knowledge
+        </span>
 
-<h1>
-General Knowledge
-</h1>
+        <h1>
+            Knowledge worth knowing.
+        </h1>
 
-<p>
-Interesting facts, explanations and useful general knowledge.
-</p>
+        <p>
+            Explore important ideas about science, the human world,
+            nature, history and the systems that shape our planet.
+        </p>
 
-<div class="hero-actions">
+        <div class="hero-actions">
 
-<a class="button button-primary" href="#latest">
-Explore Articles
-</a>
+            <a
+                class="button button-primary"
+                href="#articles"
+            >
+                Explore Articles
+            </a>
 
-<a class="button button-secondary" href="../index.html#categories">
-All Categories
-</a>
+            <a
+                class="button button-secondary"
+                href="../index.html#categories"
+            >
+                All Categories
+            </a>
 
-</div>
+        </div>
 
-</div>
+    </div>
 
 
-<div class="hero-card">
+    <div class="hero-card">
 
-<span class="hero-card-label">
-Knowledge
-</span>
+        <span class="hero-card-label">
+            GENERAL KNOWLEDGE
+        </span>
 
-<h2>
-Stay curious about the world.
-</h2>
+        <h2>
+            Important ideas, explained simply.
+        </h2>
 
-<p>
-Interesting ideas and useful facts presented in an easy-to-understand format.
-</p>
+        <p>
+            Discover detailed explanations of subjects that
+            help you understand the world around you.
+        </p>
 
-</div>
+    </div>
+
+</section>
+
+
+
+<section
+    class="container section"
+    id="articles"
+>
+
+    <div class="section-heading">
+
+        <div>
+
+            <span class="eyebrow">
+                Articles
+            </span>
+
+            <h2>
+                Latest GK Posts
+            </h2>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="article-grid">
+
+
+        <article class="article-card">
+
+            <div class="article-image">
+                Human Brain
+            </div>
+
+
+            <div class="article-body">
+
+                <span class="category-pill">
+                    General Knowledge
+                </span>
+
+
+                <h3>
+                    How the Human Brain Creates and Stores Memories
+                </h3>
+
+
+                <p>
+                    Learn how memory works, including encoding,
+                    working memory, long-term memory, retrieval,
+                    forgetting and the role of sleep.
+                </p>
+
+
+                <a
+                    class="gk-read"
+                    href="../posts/how-human-memory-works.html"
+                >
+                    Read Article →
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <article class="article-card">
+
+            <div class="article-image">
+                Earth & Climate
+            </div>
+
+
+            <div class="article-body">
+
+                <span class="category-pill">
+                    General Knowledge
+                </span>
+
+
+                <h3>
+                    How Earth's Climate System Actually Works
+                </h3>
+
+
+                <p>
+                    Understand Earth's energy balance, atmosphere,
+                    oceans, greenhouse effect, ice, climate feedbacks
+                    and natural climate variations.
+                </p>
+
+
+                <a
+                    class="gk-read"
+                    href="../posts/how-earth-climate-works.html"
+                >
+                    Read Article →
+                </a>
+
+            </div>
+
+        </article>
+
+
+    </div>
 
 </section>
 
-
-<section class="container section" id="latest">
-
-<div class="section-heading">
-
-<div>
-<span class="eyebrow">Articles</span>
-<h2>Latest General Knowledge Posts</h2>
-</div>
-
-</div>
-
-
-<div class="article-grid">
-
-<article class="article-card">
-
-<div class="article-image">
-Coming Soon
-</div>
-
-<div class="article-body">
-
-<span class="category-pill">
-General Knowledge
-</span>
-
-<h3>
-Your first GK article
-</h3>
-
-<p>
-Your published general knowledge posts will appear here.
-</p>
-
-<div class="article-meta">
-<span>CurioPress</span>
-<span>•</span>
-<span>Coming Soon</span>
-</div>
-
-</div>
-
-</article>
-
-</div>
-
-</section>
 
 </main>
 
 
+
 <footer class="site-footer">
 
-<div class="container footer-grid">
+    <div class="container footer-grid">
 
-<div>
-<a class="brand" href="../index.html">
-<span class="brand-mark">C</span>
-<span class="brand-name">CurioPress</span>
-</a>
+        <div>
 
-<p>
-A modern knowledge blog for curious minds.
-</p>
-</div>
+            <a
+                class="brand"
+                href="../index.html"
+            >
 
-<div>
-<h2>Explore</h2>
-<a href="technology.html">Technology</a>
-<a href="ai.html">AI</a>
-<a href="education.html">Education</a>
-<a href="coding.html">Coding</a>
-<a href="general-knowledge.html">General Knowledge</a>
-</div>
+                <span class="brand-mark">
+                    C
+                </span>
 
-<div>
-<h2>Website</h2>
-<a href="../about.html">About</a>
-<a href="../contact.html">Contact</a>
-<a href="../privacy.html">Privacy Policy</a>
-<a href="../disclaimer.html">Disclaimer</a>
-</div>
+                <span class="brand-name">
+                    CurioPress
+                </span>
 
-</div>
+            </a>
 
-<div class="container footer-bottom">
-© 2026 CurioPress. All rights reserved.
-</div>
+            <p>
+                A modern knowledge blog for curious minds.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h2>
+                Explore
+            </h2>
+
+            <a href="technology.html">
+                Technology
+            </a>
+
+            <a href="ai.html">
+                AI
+            </a>
+
+            <a href="coding.html">
+                Coding
+            </a>
+
+            <a href="education.html">
+                Education
+            </a>
+
+            <a href="general-knowledge.html">
+                General Knowledge
+            </a>
+
+        </div>
+
+
+        <div>
+
+            <h2>
+                Website
+            </h2>
+
+            <a href="../about.html">
+                About
+            </a>
+
+            <a href="../contact.html">
+                Contact
+            </a>
+
+            <a href="../privacy.html">
+                Privacy Policy
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="container footer-bottom">
+
+        <span>
+            © 2026 CurioPress. All rights reserved.
+        </span>
+
+    </div>
 
 </footer>
 
+
+
 <script src="../js/main.js"></script>
 
+
 </body>
+
 </html>
