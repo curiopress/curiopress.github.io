@@ -1,47 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-<urlset
-xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
->
+  <url>
+    <loc>https://curiopress.github.io/</loc>
+  </url>
 
-<url>
-<loc>https://curiopress.github.io/</loc>
-</url>
+  <url>
+    <loc>https://curiopress.github.io/about.html</loc>
+  </url>
 
-<url>
-<loc>https://curiopress.github.io/about.html</loc>
-</url>
+  <url>
+    <loc>https://curiopress.github.io/contact.html</loc>
+  </url>
 
-<url>
-<loc>https://curiopress.github.io/contact.html</loc>
-</url>
+  <url>
+    <loc>https://curiopress.github.io/privacy.html</loc>
+  </url>
 
-<url>
-<loc>https://curiopress.github.io/privacy.html</loc>
-</url>
+  <url>
+    <loc>https://curiopress.github.io/disclaimer.html</loc>
+  </url>
 
-<url>
-<loc>https://curiopress.github.io/disclaimer.html</loc>
-</url>
+  <url>
+    <loc>https://curiopress.github.io/categories/technology.html</loc>
+  </url>
 
-<url>
-<loc>https://curiopress.github.io/categories/technology.html</loc>
-</url>
+  <url>
+    <loc>https://curiopress.github.io/categories/ai.html</loc>
+  </url>
 
-<url>
-<loc>https://curiopress.github.io/categories/ai.html</loc>
-</url>
+  <url>
+    <loc>https://curiopress.github.io/categories/education.html</loc>
+  </url>
 
-<url>
-<loc>https://curiopress.github.io/categories/education.html</loc>
-</url>
+  <url>
+    <loc>https://curiopress.github.io/categories/coding.html</loc>
+  </url>
 
-<url>
-<loc>https://curiopress.github.io/categories/coding.html</loc>
-</url>
+  <url>
+    <loc>https://curiopress.github.io/categories/general-knowledge.html</loc>
+  </url>
 
-<url>
-<loc>https://curiopress.github.io/categories/general-knowledge.html</loc>
-</url>
+  <url>
+    <loc>https://curiopress.github.io/posts/ai-and-machine-learning.html</loc>
+  </url>
+
+  <url>
+    <loc>https://curiopress.github.io/posts/algorithms-and-data-structures.html</loc>
+  </url>
+
+  <url>
+    <loc>https://curiopress.github.io/posts/cybersecurity.html</loc>
+  </url>
+
+  <url>
+    <loc>https://curiopress.github.io/posts/data-centers.html</loc>
+  </url>
+
+  <url>
+    <loc>https://curiopress.github.io/posts/how-computers-work.html</loc>
+  </url>
+
+  <url>
+    <loc>https://curiopress.github.io/posts/how-earth-climate-works.html</loc>
+  </url>
+
+  <url>
+    <loc>https://curiopress.github.io/posts/how-human-memory-works.html</loc>
+  </url>
+
+  <url>
+    <loc>https://curiopress.github.io/posts/how-llms-work.html</loc>
+  </url>
+
+  <url>
+    <loc>https://curiopress.github.io/posts/how-programming-languages-work.html</loc>
+  </url>
+
+  <url>
+    <loc>https://curiopress.github.io/posts/how-the-internet-works.html</loc>
+  </url>
 
 </urlset>
